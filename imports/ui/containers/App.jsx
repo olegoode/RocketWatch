@@ -21,7 +21,7 @@ export default class App extends Component {
     let contents;
 
     if (Object.getOwnPropertyNames(this.state.nextLaunch).length === 0) {
-      contents = <span>Retrieving Data...</span>;
+      contents = <p className="title has-text-centered"><span>Retrieving Data</span></p>;
     } else {
       contents = <Countdown launch={this.state.nextLaunch} />;
     }

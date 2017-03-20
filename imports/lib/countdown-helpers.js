@@ -1,3 +1,5 @@
+export const getLocalTime = utcdate => new Date(utcdate).toString();
+
 export const getTimeRemaining = (launch) => {
   const t0 = (launch.netstamp * 1000) - Date.parse(new Date());
   return {

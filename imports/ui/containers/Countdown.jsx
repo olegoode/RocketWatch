@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { getTimeRemaining, padWithZeros } from '../../lib/countdown-helpers.js';
+import { getLocalTime, getTimeRemaining, padWithZeros } from '../../lib/countdown-helpers.js';
 
 class Countdown extends Component {
   constructor(props) {
@@ -77,8 +77,20 @@ class Countdown extends Component {
                 Vehicle: {launch.rocket.name}
               </p>
             </div>
-
+            <div className="meta-container columns">
+              <div className="column has-text-centered">
+                <p>
+                  <span title={getLocalTime(launch.net)}>{launch.net}</span>
+                </p>
+              </div>
+              <div className="column has-text-centered">
+                <p>
+                  {launch.location.pads[0].name}
+                </p>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     );
