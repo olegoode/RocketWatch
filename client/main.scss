@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Code-Pro';
+  src: url('fonts/CODE Bold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import '{}/node_modules/bulma-scss/scss/utilities/_all.scss';
+
+$body-background: $black-bis;
+$white: $black-bis;
+$text: $white-ter;
+$text-strong: $white-ter;
+$text-light: $grey-light;
+$link-hover: $grey;
+
+$family-sans-serif: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-primary: $family-sans-serif;
+
+@import "{}/node_modules/bulma-scss/scss/base/_all.scss";
+@import "{}/node_modules/bulma-scss/scss/elements/_all.scss";
+@import "{}/node_modules/bulma-scss/scss/components/_all.scss";
+@import "{}/node_modules/bulma-scss/scss/grid/_all.scss";
+@import "{}/node_modules/bulma-scss/scss/layout/_all.scss";
+
+.countdown-container {
+  max-width: 840px;
+  margin: auto;
+  background-image: url('/images/countdown-bg.svg');
+  background-size: 100%;
+  background-position: top center;
+}
+
+.countdown-timer {
+  margin: auto;
+  position: relative;
+  padding-bottom: 42.5%;
+
+  & > div {
+    position: absolute;
+    width: 100%;
+  }
+
+  .digits-container {
+    width: 100%;
+    padding: 80px 60px 80px 55px;
+  }
+
+  .digits {
+    font-family: 'Audiowide';
+    text-align: center;
+
+    & > div {
+      font-size: 65px;
+    }
+
+  }
+
+}

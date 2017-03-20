@@ -19,12 +19,22 @@ export default class App extends Component {
   
 
   render() {
+    let contents
+
+    if (Object.getOwnPropertyNames(this.state.nextLaunch).length === 0) {
+      contents = <span>Loading...</span>
+    } else {
+      contents = <Countdown launch={this.state.nextLaunch} />
+    }
+
     return (
       <div>
         <Header />
-        <section className="hero is-fullheight">
+        <section className="hero is-medium">
           <div className="hero-body">
-            <Countdown launch={this.state.nextLaunch} />
+            <div className="container">
+              {contents}              
+            </div>
           </div>
         </section>
       </div>
