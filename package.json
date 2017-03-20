@@ -10,7 +10,8 @@
     "bulma-scss": "^0.3.0-cc1",
     "meteor-node-stubs": "~0.2.4",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -24,7 +25,9 @@
     "eslint-plugin-react": "^6.10.0"
   },
   "babel": {
-    "plugins": ["transform-class-properties"]
+    "plugins": [
+      "transform-class-properties"
+    ]
   },
   "eslintConfig": {
     "parser": "babel-eslint",

@@ -1,3 +1,5 @@
+import 'whatwg-fetch';
+
 const baseURL = 'https://launchlibrary.net/1.2/';
 
 export const getLaunches = (num = 20) => {
