@@ -1,39 +1,38 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.jsx';
-import Countdown from '../components/Countdown.jsx';
+import Countdown from '../containers/Countdown.jsx';
 
 import { getLaunches } from '../../api';
 
 export default class App extends Component {
   state = {
-    nextLaunch: {}
+    nextLaunch: {},
   }
 
   componentDidMount() {
     getLaunches().then( (json) => {
       this.setState({
-        nextLaunch: json.launches[0]
-      })
-    })
+        nextLaunch: json.launches[0],
+      });
+    });
   }
-  
 
   render() {
-    let contents
+    let contents;
 
     if (Object.getOwnPropertyNames(this.state.nextLaunch).length === 0) {
-      contents = <span>Loading...</span>
+      contents = <span>Retrieving Data...</span>;
     } else {
-      contents = <Countdown launch={this.state.nextLaunch} />
+      contents = <Countdown launch={this.state.nextLaunch} />;
     }
 
     return (
       <div>
         <Header />
-        <section className="hero is-medium">
+        <section className="countdown hero is-medium">
           <div className="hero-body">
             <div className="container">
-              {contents}              
+              {contents}
             </div>
           </div>
         </section>

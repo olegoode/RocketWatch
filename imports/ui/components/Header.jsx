@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
-const Header = props => {
+const Header = () => {
   return (
     <div>
       <header>
@@ -11,13 +11,9 @@ const Header = props => {
             </a>
           </div>
         </nav>
-      </header>      
+      </header>
     </div>
   );
-};
-
-Header.propTypes = {
-  
 };
 
 export default Header;
