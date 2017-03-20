@@ -9,6 +9,7 @@
 
 $body-background: $black-bis;
 $white: $black-bis;
+$title: $white-ter;
 $text: $white-ter;
 $text-strong: $white-ter;
 $text-light: $grey-light;
@@ -29,31 +30,41 @@ $family-primary: $family-sans-serif;
   background-image: url('/images/countdown-bg.svg');
   background-size: 100%;
   background-position: top center;
-}
 
-.countdown-timer {
-  margin: auto;
-  position: relative;
-  padding-bottom: 42.5%;
-
-  & > div {
-    position: absolute;
-    width: 100%;
-  }
-
-  .digits-container {
-    width: 100%;
-    padding: 80px 60px 80px 55px;
-  }
-
-  .digits {
-    font-family: 'Audiowide';
-    text-align: center;
+  .countdown-wrapper {
+    margin: auto;
+    position: relative;
+    padding-bottom: 42.5%;
 
     & > div {
-      font-size: 65px;
+      position: absolute;
+      width: 100%;
+    }
+
+    .status {
+      font-family: 'Audiowide';
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 38px;
+    }
+
+    .digits-container {
+      width: 100%;
+      padding: 30px 60px 0 60px;
+
+      .digits {
+        font-family: 'Audiowide';
+        text-align: center;
+
+        & > div {
+          font-size: 65px;
+        }
+      }
+    }
+
+    .meta-container {
+      padding-top: 15px;
     }
 
   }
-
 }

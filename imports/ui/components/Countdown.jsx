@@ -37,11 +37,32 @@ class Countdown extends Component {
   render() {
     const { launch } = this.props
     const { seconds, minutes, hours, days } = this.state.timeRemaining
+    let statusText
+    switch (launch.status) {
+      case 1:
+        statusText = "Launch is GO"
+        break
+      case 2:
+        statusText = "Launch is NO-GO"
+        break
+      case 3:
+        statusText = "Launch Successful"
+        break
+      case 4:
+        statusText = "Launch Failed :("
+        break
+      default:
+        statusText = "COUNTDOWN"
+        break
+    }
 
     return (
       <div className="countdown-container">
-        <div className="countdown-timer">
+        <div className="countdown-wrapper">
           <div>
+            <div className="status has-text-centered">
+              {statusText}
+            </div>
             <div className="digits-container columns is-gapless is-mobile is-multiline">
               <div className="column is-half-mobile digits days">
                 <div>{this.padWithZeros(days)}</div>
@@ -60,6 +81,15 @@ class Countdown extends Component {
                 <span>Seconds</span>
               </div>
             </div>
+            <div className="meta-container content">
+              <p className="title has-text-centered">
+                {launch.name}
+              </p>
+              <p className="has-text-centered">
+                {launch.rocket.name}
+              </p>
+            </div>
+
           </div>
         </div>
       </div>

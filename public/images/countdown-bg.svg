@@ -3,14 +3,22 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="840px"
 	 height="357px" viewBox="0 0 840 357" style="enable-background:new 0 0 840 357;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#efefef;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g id="Layer_1">
 	<path class="st0" d="M419,5.5H2.5v247c0,0,93,9,106.5,95h310"/>
-	<path class="st0" d="M419,5.5h419.5v247c0,0-96,9-109.5,95H419"/>
-	<polyline class="st0" points="838.5,218 782,218 682,318 682,347.5 	"/>
+	<path class="st0" d="M419,347.5h310c13.5-86,109.5-95,109.5-95V5.5H419"/>
+	<polyline class="st1" points="838.5,218 782,218 682,318 682,347.5 	"/>
+	<polyline class="st2" points="187,10.5 7.5,10.5 7.5,150 	"/>
+	<polyline class="st2" points="653.5,10.5 833,10.5 833,150 	"/>
+</g>
+<g id="Layer_3">
+	<polyline class="st0" points="419,5.5 210.8,5.5 224.4,33.1 419,33.1 	"/>
+	<polyline class="st0" points="419,5.5 627.3,5.5 613.6,33.1 419,33.1 	"/>
 </g>
 <g id="Layer_2">
-	<polyline class="st0" points="2.5,218 56,218 156,318 156,347.5 	"/>
+	<polyline class="st1" points="2.5,218 56,218 156,318 156,347.5 	"/>
 </g>
 </svg>
