@@ -24,6 +24,11 @@ $family-primary: $family-sans-serif;
 @import "{}/node_modules/bulma-scss/scss/grid/_all.scss";
 @import "{}/node_modules/bulma-scss/scss/layout/_all.scss";
 
+.nav {
+  height: 5rem;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
 .countdown-container {
   max-width: 840px;
   margin: auto;

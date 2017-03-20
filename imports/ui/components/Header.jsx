@@ -7,7 +7,7 @@ const Header = props => {
         <nav className="nav">
           <div className="nav-left">
             <a className="nav-item">
-              <h1>RocketWatch</h1>
+              <h1 className="title">RocketWatch</h1>
             </a>
           </div>
         </nav>
