@@ -17,7 +17,7 @@ class Countdown extends Component {
   componentDidMount() {
     const updateTime = setInterval(() => {
       this.setState({
-        timeRemaining: getTimeRemaining(this.props.launch)
+        timeRemaining: getTimeRemaining(this.props.launch),
       });
     }, 500);
   }

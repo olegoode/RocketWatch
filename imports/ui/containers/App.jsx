@@ -10,7 +10,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    getLaunches().then( (json) => {
+    getLaunches().then((json) => {
       this.setState({
         nextLaunch: json.launches[0],
       });
