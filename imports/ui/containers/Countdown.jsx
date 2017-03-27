@@ -11,15 +11,23 @@ class Countdown extends Component {
   }
 
   componentWillMount() {
-    this.setState({ timeRemaining: getTimeRemaining(this.props.launch) });
+    if (this.props.launch.status === 2) {
+      this.setState({
+        timeRemaining: getTimeRemaining(null),
+      });
+    } else {
+      this.setState({ timeRemaining: getTimeRemaining(this.props.launch) });
+    }
   }
 
   componentDidMount() {
-    const updateTime = setInterval(() => {
-      this.setState({
-        timeRemaining: getTimeRemaining(this.props.launch),
-      });
-    }, 500);
+    if (this.props.launch.status === 1) {
+      const updateTime = setInterval(() => {
+        this.setState({
+          timeRemaining: getTimeRemaining(this.props.launch),
+        });
+      }, 500);
+    }
   }
 
   render() {
