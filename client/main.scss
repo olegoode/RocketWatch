@@ -23,9 +23,6 @@ $family-primary: $family-sans-serif;
 @import "{}/node_modules/bulma-scss/scss/components/_all.scss";
 @import "{}/node_modules/bulma-scss/scss/grid/_all.scss";
 @import "{}/node_modules/bulma-scss/scss/layout/_all.scss";
-html {
-    height: 100%;
-}
 body {
     height: 100%;
     background-image: url('/images/grid.png');
