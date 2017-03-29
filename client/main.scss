@@ -95,3 +95,22 @@ body {
         }
     }
 }
+
+// LAUNCH LIST
+
+.launch-list {
+  
+  > li {
+    padding: 2em 1em;
+    border-top: 1px solid $tron;
+    display: flex;
+
+    > div:first-child {
+        flex-grow: 1;
+    }
+
+    .meta {
+        text-align: right;
+    }
+  }
+}

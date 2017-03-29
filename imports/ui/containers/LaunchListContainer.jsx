@@ -20,7 +20,7 @@ class LaunchListContainer extends Component {
   render() {
     return (
       <div className="container">
-        <LaunchList />
+        <LaunchList launches={this.props.launches} />
       </div>
     );
   }
